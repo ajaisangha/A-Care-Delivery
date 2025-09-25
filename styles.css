@@ -170,3 +170,35 @@ footer {
 .estimate-link:hover {
   background-color: #e0a800;
 }
+
+.service-link{
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 16px;
+  background-color: #ffc107;
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.service-link:hover {
+  background-color: #e0a800;
+}
+
+.home-link{
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 16px;
+  background-color: #ffc107;
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.home-link:hover {
+  background-color: #e0a800;
+}
