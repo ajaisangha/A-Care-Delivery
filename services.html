@@ -2,112 +2,63 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>A+ Care Deliveries – Rates</title>
-  <link rel="stylesheet" href="styles.css"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Services — A Care Delivery</title>
+  <link rel="stylesheet" href="css/services.css" />
 </head>
 <body>
-  <header>
-    <h1>A+ Care Deliveries</h1>
-    <p>Professional, Reliable, Affordable Local Delivery Solutions</p>
-
-    <a href="index.html" class="home-link"> Home</a>
-    <a href="estimate.html" class="estimate-link"> Get an Estimate</a>
-    
+  <header class="header">
+    <div class="logo">
+      <a href="index.html"><img src="images/logo.png" alt="A Care Delivery Logo" /></a>
+    </div>
+    <nav class="nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html" class="active">Services</a></li>
+        <li><a href="estimate.html">Estimate</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <button class="menu-toggle" id="menuToggle">☰</button>
   </header>
 
-  <main>
-    <section class="accordion">
-      <button class="accordion-btn">🌸 Local Florist Courier Services</button>
-      <div class="panel">
-        <table>
-          <thead>
-            <tr><th>Service Tier</th><th>Delivery Radius</th><th>Price</th><th>Ideal For</th><th>Notes</th></tr>
-          </thead>
-          <tbody>
-            <tr><td>Standard Bouquet</td><td>Up to 10km</td><td>$15</td><td>Single bouquet deliveries</td><td>2-hour delivery window</td></tr>
-            <tr><td>Premium Arrangement</td><td>Up to 15km</td><td>$22</td><td>Large, delicate arrangements</td><td>Extra careful handling included</td></tr>
-            <tr><td>Multiple Delivery</td><td>Up to 20km</td><td>$35</td><td>2-3 deliveries per trip</td><td>Perfect for wedding orders</td></tr>
-            <tr><td>Holiday/Emergency</td><td>Anywhere in KW</td><td>$35+</td><td>Valentine's, Mother's Day</td><td>24/7 service, 1-hour rush available</td></tr>
-          </tbody>
-        </table>
-        <p class="note">💡 Florist Partnerships: 10% discount on monthly contracts over 20 deliveries</p>
+  <section class="services-intro">
+    <div class="container">
+      <h1>Our Services</h1>
+      <p>At A Care Delivery, we offer a range of health and wellness services designed to support you in the comfort of your home.</p>
+    </div>
+  </section>
+
+  <section class="services-list">
+    <div class="container">
+      <div class="service-card">
+        <img src="images/service1.png" alt="Home Nursing" />
+        <h2>Home Nursing</h2>
+        <p>Professional nursing care at your doorstep — wound care, injections, monitoring, and more.</p>
       </div>
-
-      <button class="accordion-btn">💊 Pharmacy Prescription Delivery</button>
-      <div class="panel">
-        <table>
-          <thead>
-            <tr><th>Service Type</th><th>Coverage Area</th><th>Price</th><th>Timeframe</th><th>Special Features</th></tr>
-          </thead>
-          <tbody>
-            <tr><td>Single Prescription</td><td>Within 5km</td><td>$8</td><td>2-4 hours</td><td>Discreet packaging</td></tr>
-            <tr><td>Daily Scheduled Route</td><td>Specific area</td><td>$6/delivery</td><td>Fixed times</td><td>Ideal for retirement homes</td></tr>
-            <tr><td>Urgent Medication</td><td>Entire KW area</td><td>$15</td><td>Under 1 hour</td><td>24/7 emergency service</td></tr>
-            <tr><td>Monthly Subscription</td><td>Custom zones</td><td>From $200/month</td><td>Scheduled</td><td>Perfect for clinics</td></tr>
-          </tbody>
-        </table>
-        <p class="note">📦 All deliveries include signature confirmation and temperature control if needed</p>
+      <div class="service-card">
+        <img src="images/service2.png" alt="Medicine Delivery" />
+        <h2>Medicine Delivery</h2>
+        <p>We deliver prescribed medicines quickly and safely to your location.</p>
       </div>
-
-      <button class="accordion-btn">📦 Small Retailer & Parcel Delivery</button>
-      <div class="panel">
-        <table>
-          <thead>
-            <tr><th>Package Size</th><th>Local KW (0-15km)</th><th>Regional (15-30km)</th><th>Urgent (2-hour)</th><th>Notes</th></tr>
-          </thead>
-          <tbody>
-            <tr><td>Small (under 2kg)</td><td>$12</td><td>$18</td><td>$25</td><td>Documents, small items</td></tr>
-            <tr><td>Medium (2-10kg)</td><td>$16</td><td>$24</td><td>$32</td><td>Clothing, books, electronics</td></tr>
-            <tr><td>Large (10-20kg)</td><td>$22</td><td>$32</td><td>$45</td><td>Small appliances, multiple items</td></tr>
-            <tr><td>Extra Large (20kg+)</td><td>Quote based</td><td>Quote based</td><td>Quote based</td><td>Furniture, bulk orders</td></tr>
-          </tbody>
-        </table>
-        <p class="note">📉 Volume discounts: 15% off for 10+ parcels per week</p>
+      <div class="service-card">
+        <img src="images/service3.png" alt="Teleconsultation" />
+        <h2>Teleconsultation</h2>
+        <p>Talk to qualified doctors remotely, from the comfort of your own home.</p>
       </div>
+      <!-- You can add more service items as needed -->
+    </div>
+  </section>
 
-      <button class="accordion-btn">⚡ Same-Day Local Delivery</button>
-      <div class="panel">
-        <table>
-          <thead>
-            <tr><th>Service Level</th><th>Delivery Time</th><th>Price (Base)</th><th>Best For</th></tr>
-          </thead>
-          <tbody>
-            <tr><td>Economy</td><td>By end of day</td><td>$12</td><td>Non-urgent documents</td></tr>
-            <tr><td>Standard</td><td>Within 4 hours</td><td>$18</td><td>Most business needs</td></tr>
-            <tr><td>Express</td><td>Within 2 hours</td><td>$28</td><td>Urgent contracts/parts</td></tr>
-            <tr><td>Rush</td><td>Within 1 hour</td><td>$40</td><td>Emergency situations</td></tr>
-          </tbody>
-        </table>
-        <p class="note">⏰ After-hours (6pm–8am) & weekend: +30% surcharge</p>
-      </div>
-
-      <button class="accordion-btn">📊 Additional Services & Service Area</button>
-      <div class="panel">
-        <h4>Additional Services & Fees</h4>
-        <ul>
-          <li><strong>Package Pickup:</strong> $3 per location ($2 after first)</li>
-          <li><strong>Signature Required:</strong> Included</li>
-          <li><strong>Photo Proof of Delivery:</strong> Included</li>
-          <li><strong>Waiting Time:</strong> $0.50/minute after 5 minutes</li>
-          <li><strong>Cancellation Fee:</strong> $5 (if dispatched)</li>
-          <li><strong>Fuel Surcharge:</strong> 5% when gas > $1.70/L</li>
-        </ul>
-
-        <h4>Service Area Map</h4>
-        <ul>
-          <li><strong>Zone 1:</strong> Core Waterloo – University District, Uptown, Laurelwood</li>
-          <li><strong>Zone 2:</strong> Extended KW – Kitchener, Cambridge, St. Jacobs</li>
-          <li><strong>Zone 3:</strong> Regional – Elmira, New Hamburg, Ayr (+20% to base rates)</li>
-        </ul>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <p>&copy; 2025 A+ Care Deliveries. All rights reserved.</p>
+  <footer class="footer">
+    <p>&copy; 2025 A Care Delivery. All rights reserved.</p>
+    <div class="social-links">
+      <a href="#">Facebook</a> |
+      <a href="#">Twitter</a> |
+      <a href="#">Instagram</a>
+    </div>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="js/services.js"></script>
 </body>
 </html>

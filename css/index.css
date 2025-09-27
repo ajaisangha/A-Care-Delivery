@@ -1,0 +1,194 @@
+/* General resets and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Header styles */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.logo img {
+  height: 50px;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+}
+
+.nav li {
+  margin-left: 20px;
+}
+
+.nav a {
+  font-size: 1rem;
+  color: #333;
+  transition: color 0.3s;
+}
+
+.nav a:hover {
+  color: #007BFF;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Hero / Banner */
+.hero {
+  background: url('images/hero-bg.jpg') center/cover no-repeat;
+  padding: 100px 20px;
+  text-align: center;
+  color: #fff;
+}
+
+.hero-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.btn-primary {
+  padding: 12px 30px;
+  background-color: #007BFF;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+/* Services section */
+.services {
+  padding: 60px 20px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.service-item img {
+  width: 100%;
+  height: auto;
+}
+
+.service-item h3 {
+  margin: 20px 0 10px;
+}
+
+.service-item p {
+  color: #666;
+}
+
+/* Estimate section */
+.estimate {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.estimate form {
+  max-width: 400px;
+  margin: 0 auto;
+  display: grid;
+  gap: 20px;
+}
+
+.estimate label {
+  display: block;
+  text-align: left;
+  font-weight: bold;
+}
+
+.estimate input, .estimate select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.btn-secondary {
+  padding: 10px 25px;
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-secondary:hover {
+  background-color: #1e7e34;
+}
+
+#estimateResult {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  color: #444;
+}
+
+/* Footer */
+.footer {
+  background: #333;
+  color: #fff;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.social-links a {
+  color: #fff;
+  margin: 0 10px;
+  font-size: 0.9rem;
+}
+
+.social-links a:hover {
+  color: #ddd;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .nav ul {
+    flex-direction: column;
+    display: none;
+  }
+
+  .nav ul.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}

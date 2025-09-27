@@ -1,75 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Get an Estimate – A+ Care Deliveries</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Estimate — A Care Delivery</title>
+  <link rel="stylesheet" href="css/estimate.css" />
 </head>
 <body>
-
-  <header>
-    <h1>A+ Care Deliveries</h1>
-    <p>Get a Quick Estimate</p>
-
-    <a href="index.html" class="home-link"> Home</a>
-    <a href="services.html" class="service-link"> Services</a>
+  <header class="header">
+    <div class="logo">
+      <a href="index.html"><img src="images/logo.png" alt="A Care Delivery Logo" /></a>
+    </div>
+    <nav class="nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="estimate.html" class="active">Estimate</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <button class="menu-toggle" id="menuToggle">☰</button>
   </header>
 
-  <main>
-    <div class="form-container">
-      <h2>Estimate Calculator</h2>
-
+  <section class="estimate-section">
+    <div class="container">
+      <h1>Get an Estimate</h1>
+      <p>Enter the details below to get a rough estimate of cost & time.</p>
       <form id="estimateForm">
         <div class="form-group">
-          <label for="service">Service Type</label>
-          <select id="service" required>
-            <option value="">Select a service</option>
-            <option value="florist">Florist Delivery</option>
-            <option value="pharmacy">Pharmacy Delivery</option>
-            <option value="retail">Retail/Parcel Delivery</option>
-            <option value="sameDay">Same-Day Delivery</option>
+          <label for="serviceType">Service Type</label>
+          <select id="serviceType" name="serviceType" required>
+            <option value="homeNursing">Home Nursing</option>
+            <option value="medicineDelivery">Medicine Delivery</option>
+            <option value="teleconsultation">Teleconsultation</option>
           </select>
         </div>
 
         <div class="form-group">
           <label for="distance">Distance (km)</label>
-          <input type="number" id="distance" min="0" placeholder="e.g. 12" required>
+          <input type="number" id="distance" name="distance" min="0" step="0.1" required />
         </div>
 
-        <div class="form-group" id="packageGroup" style="display:none;">
-          <label for="packageSize">Package Size</label>
-          <select id="packageSize">
-            <option value="">Select size</option>
-            <option value="small">Small (under 2kg)</option>
-            <option value="medium">Medium (2-10kg)</option>
-            <option value="large">Large (10-20kg)</option>
-            <option value="xl">Extra Large (20kg+)</option>
-          </select>
+        <div class="form-group">
+          <button type="submit" class="btn-estimate">Estimate</button>
         </div>
-
-        <div class="form-group" id="urgencyGroup" style="display:none;">
-          <label for="urgency">Urgency</label>
-          <select id="urgency">
-            <option value="">Select urgency</option>
-            <option value="economy">By End of Day</option>
-            <option value="standard">Within 4 Hours</option>
-            <option value="express">Within 2 Hours</option>
-            <option value="rush">Within 1 Hour</option>
-          </select>
-        </div>
-
-        <button type="submit">Get Estimate</button>
       </form>
 
-      <div id="estimateResult"></div>
+      <div id="estimateResult" class="result-area"></div>
     </div>
-  </main>
+  </section>
 
-  <footer>
-    <p>&copy; 2025 A+ Care Deliveries. All rights reserved.</p>
+  <footer class="footer">
+    <p>&copy; 2025 A Care Delivery. All rights reserved.</p>
+    <div class="social-links">
+      <a href="#">Facebook</a> |
+      <a href="#">Twitter</a> |
+      <a href="#">Instagram</a>
+    </div>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="js/estimate.js"></script>
 </body>
 </html>

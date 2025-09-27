@@ -2,76 +2,89 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>A+ Care Deliveries – Rates</title>
-  <link rel="stylesheet" href="styles.css"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>A Care Delivery</title>
+  <!-- Link to external CSS -->
+  <link rel="stylesheet" href="css/index.css" />
 </head>
 <body>
-  <header>
-    <h1>A+ Care Deliveries</h1>
-    <p>Professional, Reliable, Affordable Local Delivery Solutions</p>
-
-    <a href="estimate.html" class="estimate-link"> Get an Estimate</a>
-    <a href="services.html" class="service-link"> Services</a>
-
+  <!-- Header / Navbar -->
+  <header class="header">
+    <div class="logo">
+      <a href="index.html"><img src="images/logo.png" alt="A Care Delivery Logo" /></a>
+    </div>
+    <nav class="nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="estimate.html">Estimate</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <button class="menu-toggle" id="menuToggle">☰</button>
   </header>
 
-  <main>
-    <main class="home">
+  <!-- Hero / Banner Section -->
   <section class="hero">
-    <h2>Your Local Partner in Reliable Deliveries</h2>
-    <p>
-      At <strong>A+ Care Deliveries</strong>, we make sure your packages, prescriptions, 
-      flowers, and retail items arrive safely, quickly, and affordably. Whether it’s 
-      an urgent pharmacy order, a bouquet for someone special, or same-day parcel 
-      delivery for your business, we’ve got you covered.
-    </p>
+    <div class="hero-content">
+      <h1>Welcome to A Care Delivery</h1>
+      <p>Your health is our top priority. We deliver care, not just medicine.</p>
+      <a href="estimate.html" class="btn-primary">Get Estimate</a>
+    </div>
   </section>
 
-  <section class="why-choose-us">
-    <h3>Why Choose A+ Care?</h3>
-    <ul>
-      <li>✅ Fast, same-day local delivery options</li>
-      <li>✅ Affordable, transparent pricing with no hidden fees</li>
-      <li>✅ Special handling for fragile, medical, and time-sensitive items</li>
-      <li>✅ Service areas covering Waterloo, Kitchener, Cambridge & beyond</li>
-      <li>✅ Discounts for businesses, retailers, and recurring customers</li>
-    </ul>
+  <!-- Services Section -->
+  <section class="services">
+    <h2>Our Services</h2>
+    <div class="services-grid">
+      <div class="service-item">
+        <img src="images/service1.png" alt="Service 1" />
+        <h3>Home Nursing</h3>
+        <p>Professional nursing services at your doorstep.</p>
+      </div>
+      <div class="service-item">
+        <img src="images/service2.png" alt="Service 2" />
+        <h3>Medicine Delivery</h3>
+        <p>Get your prescribed medicines delivered safely.</p>
+      </div>
+      <div class="service-item">
+        <img src="images/service3.png" alt="Service 3" />
+        <h3>Teleconsultation</h3>
+        <p>Consult with doctors remotely anytime.</p>
+      </div>
+    </div>
   </section>
 
-  <section class="how-it-works">
-    <h3>How It Works</h3>
-    <ol>
-      <li><strong>Book:</strong> Request a delivery online with a quick estimate.</li>
-      <li><strong>Pickup:</strong> Our driver arrives at your location promptly.</li>
-      <li><strong>Delivery:</strong> Items are delivered safely with proof of delivery.</li>
-    </ol>
-    <p>It’s that simple — delivery made easy, reliable, and stress-free.</p>
+  <!-- Estimate Section -->
+  <section class="estimate">
+    <h2>Estimate Delivery Time & Cost</h2>
+    <form id="estimateForm">
+      <label for="serviceType">Service Type</label>
+      <select id="serviceType">
+        <option value="homeNursing">Home Nursing</option>
+        <option value="medicineDelivery">Medicine Delivery</option>
+        <option value="teleconsultation">Teleconsultation</option>
+      </select>
+
+      <label for="distance">Distance (km)</label>
+      <input type="number" id="distance" min="0" required />
+
+      <button type="submit" class="btn-secondary">Estimate</button>
+    </form>
+    <div id="estimateResult"></div>
   </section>
 
-  <section class="testimonials">
-    <h3>What Our Customers Say</h3>
-    <blockquote>
-      “A+ Care Deliveries saved the day when I needed urgent medication for my father. 
-      They were fast, professional, and kind. Highly recommend!”  
-      <cite>— Sarah M., Waterloo</cite>
-    </blockquote>
-    <blockquote>
-      “As a florist, I trust A+ Care with all my local deliveries. My customers get 
-      their flowers fresh and on time every time.”  
-      <cite>— Bloom & Petal Florists</cite>
-    </blockquote>
-  </section>
-</main>
-
-  </main>
-
-  <footer>
-    <p>&copy; 2025 A+ Care Deliveries. All rights reserved.</p>
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 A Care Delivery. All Rights Reserved.</p>
+    <div class="social-links">
+      <a href="#">Facebook</a> |
+      <a href="#">Twitter</a> |
+      <a href="#">Instagram</a>
+    </div>
   </footer>
 
-  <script src="script.js"></script>
+  <!-- Link to external JS -->
+  <script src="js/index.js"></script>
 </body>
-
 </html>
-
