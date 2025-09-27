@@ -202,3 +202,66 @@ footer {
 .home-link:hover {
   background-color: #e0a800;
 }
+
+.form-container {
+  max-width: 600px;
+  margin: 40px auto;
+  background: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.form-container h2 {
+  margin-bottom: 20px;
+  color: #0d6efd;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+}
+
+select, input, textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form-group.inline {
+  display: flex;
+  gap: 10px;
+}
+
+.form-group.inline > div {
+  flex: 1;
+}
+
+button {
+  background-color: #0d6efd;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 10px;
+}
+
+#estimateResult {
+  margin-top: 20px;
+  font-weight: bold;
+  background: #e0f7fa;
+  padding: 15px;
+  border-left: 4px solid #00acc1;
+  border-radius: 4px;
+}
