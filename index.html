@@ -13,21 +13,26 @@
 
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-    <div class="container">
-      <a class="navbar-brand" href="#">A+ Care Delivery</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Track</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
-        </ul>
-      </div>
+  <div class="container-fluid px-5">
+    <!-- Brand on the left -->
+    <a class="navbar-brand" href="#">A+ Care Delivery</a>
+
+    <!-- Hamburger toggle for mobile -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Menu aligned to right -->
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav text-end text-white">
+        <li class="nav-item"><a class="nav-link text-white" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#">Services</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#">Track</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#">Contact</a></li>
+      </ul>
     </div>
-  </nav>
+  </div>
+</nav>
 
   <!-- Hero Carousel -->
   <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
@@ -38,20 +43,39 @@
     <div class="carousel-inner">
 
       <!-- Slide 1 -->
-      <div class="carousel-item active hero-slide hero-slide-1 d-flex align-items-center text-white text-center">
-        <div class="container">
-          <h1 class="display-4">Fast, Reliable & Safe Deliveries</h1>
-          <p class="lead">Your trusted courier partner across the city and beyond.</p>
-          <a href="#" class="btn btn-light btn-lg mt-3">Book a Delivery</a>
+      <div class="carousel-item active hero-slide hero-slide-1 text-white">
+        <div class="container h-100 d-flex align-items-center">
+          <div class="row w-100 align-items-center">
+            <!-- Left Column: Text -->
+            <div class="col-md-6 text-start">
+              <h1 class="display-4">Fast, Reliable & Safe Deliveries</h1>
+              <p class="lead">Your trusted courier partner across the city and beyond.</p>
+            </div>
+
+            <!-- Right Column: Button -->
+            <div class="col-md-6 text-end">
+              <a href="#" class="btn btn-light btn-lg">Book a Delivery</a>
+            </div>
+          </div>
         </div>
       </div>
 
+
       <!-- Slide 2 -->
-      <div class="carousel-item hero-slide hero-slide-2 d-flex align-items-center text-white text-center">
-        <div class="container">
-          <h2 class="display-5">Courier Pick-Up & Drop-Off You Can Trust</h2>
-          <p class="lead">We deliver for florists, pharmacies, retailers, and more — quickly and securely.</p>
-          <a href="#" class="btn btn-light btn-lg mt-3">Schedule a Pick-Up</a>
+      <div class="carousel-item hero-slide hero-slide-2 text-white">
+        <div class="container h-100 d-flex align-items-center">
+          <div class="row w-100 align-items-center">
+            <!-- Left: Text -->
+            <div class="col-md-6 text-start">
+              <h2 class="display-5">Courier Pick-Up & Drop-Off You Can Trust</h2>
+              <p class="lead">We deliver for florists, pharmacies, retailers, and more — quickly and securely.</p>
+            </div>
+
+            <!-- Right: Button -->
+            <div class="col-md-6 text-end">
+              <a href="#" class="btn btn-light btn-lg">Schedule a Pick-Up</a>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -116,7 +140,7 @@
   </section>
 
   <!-- Footer -->
-  <footer class="bg-primary text-white text-center py-3">
+  <footer class="bg-primary text-white text-center">
     <div class="container">
       <p class="mb-0">&copy; 2025 A+ Care Delivery. All rights reserved.</p>
     </div>

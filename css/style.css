@@ -1,11 +1,40 @@
-/* Hero Carousel Slides */
+/* Carousel Slide Base Style */
 .hero-slide {
-  height: 90vh;
+  height: 50vh; /* Doubled height */
   background-size: cover;
+  background-position: center;
+  position: relative;
+  background-repeat: no-repeat;
+}
+
+/* Double-height Navbar */
+.navbar {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  min-height: 112px;
+}
+
+/* Increase navbar font size on desktop (≥ 992px) */
+@media (min-width: 992px) {
+  .navbar-nav .nav-link {
+    font-size: 1.2rem; /* Adjust as needed */
+  }
+
+  .navbar-brand {
+    font-size: 1.8rem; /* Optional: increase brand size too */
+  }
+}
+
+.hero-slide {
+  height: 50vh; /* or whatever height works for you */
+  background-size: contain;     /* was 'cover', now 'contain' */
+  background-repeat: no-repeat;
   background-position: center;
   position: relative;
 }
 
+
+/* Overlay */
 .hero-slide::before {
   content: "";
   position: absolute;
@@ -14,16 +43,24 @@
   z-index: 1;
 }
 
+/* Foreground content styling */
 .hero-slide .container {
   position: relative;
   z-index: 2;
 }
 
-/* Slide-specific backgrounds */
+/* Working Background Images */
 .hero-slide-1 {
-  background-image: url('https://images.unsplash.com/photo-1588776814546-ec8f253a1c1d?auto=format&fit=crop&w=1600&q=80');
+  background-image: url('https://static.vecteezy.com/system/resources/previews/006/431/642/non_2x/delivery-van-on-white-background-free-vector.jpg');
 }
 
 .hero-slide-2 {
-  background-image: url('https://images.unsplash.com/photo-1590099039745-7a4b16bb1907?auto=format&fit=crop&w=1600&q=80');
+  background-image: url('https://img.freepik.com/premium-vector/courier-with-parcel-background-delivery-service-van_165429-45.jpg');
+}
+
+/* Footer: double height and larger font */
+footer {
+  padding-top: 3rem;   /* Default was ~1.5rem (py-3) */
+  padding-bottom: 3rem;
+  font-size: 1.25rem;   /* Increase font size (1.25rem = ~20px) */
 }
