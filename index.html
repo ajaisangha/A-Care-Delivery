@@ -7,8 +7,6 @@
 
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
-  
-  <!-- Custom CSS -->
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
@@ -31,23 +29,41 @@
     </div>
   </nav>
 
-  <!-- Original Hero Section -->
-  <header class="hero-section text-white text-center d-flex align-items-center">
-    <div class="container">
-      <h1 class="display-4">Fast, Reliable & Safe Deliveries</h1>
-      <p class="lead">Your trusted courier partner across the city and beyond.</p>
-      <a href="#" class="btn btn-light btn-lg mt-3">Book a Delivery</a>
+  <!-- Hero Carousel -->
+  <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
     </div>
-  </header>
+    <div class="carousel-inner">
 
-  <!-- New Hero Section -->
-  <section class="py-5 text-center bg-light">
-    <div class="container">
-      <h2 class="display-5">Courier Pick-Up & Drop-Off You Can Trust</h2>
-      <p class="lead">We deliver for florists, pharmacies, retailers, and more — quickly and securely.</p>
-      <a href="#" class="btn btn-primary btn-lg mt-3">Schedule a Pick-Up</a>
+      <!-- Slide 1 -->
+      <div class="carousel-item active hero-slide hero-slide-1 d-flex align-items-center text-white text-center">
+        <div class="container">
+          <h1 class="display-4">Fast, Reliable & Safe Deliveries</h1>
+          <p class="lead">Your trusted courier partner across the city and beyond.</p>
+          <a href="#" class="btn btn-light btn-lg mt-3">Book a Delivery</a>
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="carousel-item hero-slide hero-slide-2 d-flex align-items-center text-white text-center">
+        <div class="container">
+          <h2 class="display-5">Courier Pick-Up & Drop-Off You Can Trust</h2>
+          <p class="lead">We deliver for florists, pharmacies, retailers, and more — quickly and securely.</p>
+          <a href="#" class="btn btn-light btn-lg mt-3">Schedule a Pick-Up</a>
+        </div>
+      </div>
+
     </div>
-  </section>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    </button>
+  </div>
 
   <!-- Services Section -->
   <section class="py-5">
