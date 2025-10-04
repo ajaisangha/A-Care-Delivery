@@ -1,13 +1,17 @@
-/* Carousel Slide Base Style */
+/* ====================
+   HERO SLIDES
+==================== */
+
+/* Base Hero Slide */
 .hero-slide {
   height: 50vh;
-  background-size: cover; /* Changed back to cover */
-  background-position: center;
+  background-size: contain;       /* Show full image */
   background-repeat: no-repeat;
+  background-position: center center;
   position: relative;
 }
 
-/* Dark overlay */
+/* Dark Overlay */
 .hero-slide::before {
   content: "";
   position: absolute;
@@ -16,29 +20,40 @@
   z-index: 1;
 }
 
-/* Foreground content styling */
+/* Foreground content */
 .hero-slide .container {
   position: relative;
   z-index: 2;
 }
 
-/* Specific slide backgrounds */
+/* Slide 1 Background */
 .hero-slide-1 {
   background-image: url('https://static.vecteezy.com/system/resources/previews/006/431/642/non_2x/delivery-van-on-white-background-free-vector.jpg');
 }
 
+/* Slide 2 Background */
 .hero-slide-2 {
   background-image: url('https://img.freepik.com/premium-vector/courier-with-parcel-background-delivery-service-van_165429-45.jpg');
 }
 
-/* Navbar: double height */
+
+/* ====================
+   NAVBAR
+==================== */
+
+/* Fixed navbar with extra padding */
+body {
+  padding-top: 120px; /* match navbar height to prevent overlap */
+}
+
+/* Double-height navbar */
 .navbar {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
   min-height: 112px;
 }
 
-/* Navbar font on desktop */
+/* Font adjustments on desktop */
 @media (min-width: 992px) {
   .navbar-nav .nav-link {
     font-size: 1.2rem;
@@ -49,7 +64,11 @@
   }
 }
 
-/* Footer */
+
+/* ====================
+   FOOTER
+==================== */
+
 footer {
   padding-top: 3rem;
   padding-bottom: 3rem;
