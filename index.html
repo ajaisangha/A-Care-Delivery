@@ -12,132 +12,125 @@
 <body>
 
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-  <div class="container-fluid px-5">
-    <!-- Brand on the left -->
-    <a class="navbar-brand" href="#">A+ Care Delivery</a>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary" aria-label="Main Navigation">
+    <div class="container-fluid px-5">
+      <a class="navbar-brand" href="index.html">A+ Care Delivery</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-    <!-- Hamburger toggle for mobile -->
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <!-- Menu aligned to right -->
-    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-      <ul class="navbar-nav text-end text-white">
-        <li class="nav-item"><a class="nav-link text-white" href="#">Home</a></li>
-        <li class="nav-item"><a class="nav-link text-white" href="#">Services</a></li>
-        <li class="nav-item"><a class="nav-link text-white" href="#">Track</a></li>
-        <li class="nav-item"><a class="nav-link text-white" href="#">Contact</a></li>
-      </ul>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav text-end text-white">
+          <li class="nav-item"><a class="nav-link text-white" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#track">Track</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
     </div>
-  </div>
-</nav>
+  </nav>
 
-  <!-- Hero Carousel -->
-  <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    </div>
-    <div class="carousel-inner">
+  <!-- Main Content -->
+  <main>
 
-      <!-- Slide 1 -->
-      <div class="carousel-item active hero-slide hero-slide-1 text-white">
-        <div class="container h-100 d-flex align-items-center">
-          <div class="row w-100 align-items-center">
-            <!-- Left Column: Text -->
-            <div class="col-md-6 text-start">
-              <h1 class="display-4">Fast, Reliable & Safe Deliveries</h1>
-              <p class="lead">Your trusted courier partner across the city and beyond.</p>
+    <!-- Hero Carousel -->
+    <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      </div>
+      <div class="carousel-inner">
+
+        <!-- Slide 1 -->
+        <div class="carousel-item active hero-slide hero-slide-1 text-white">
+          <div class="container h-100 d-flex align-items-center">
+            <div class="row w-100 align-items-center">
+              <div class="col-md-6 text-start">
+                <h1 class="display-4">Fast, Reliable & Safe Deliveries</h1>
+                <p class="lead">Your trusted courier partner across the city and beyond.</p>
+              </div>
+              <div class="col-md-6 text-end">
+                <button class="btn btn-light btn-lg" data-action="book" aria-label="Book a Delivery">Book a Delivery</button>
+              </div>
             </div>
+          </div>
+        </div>
 
-            <!-- Right Column: Button -->
-            <div class="col-md-6 text-end">
-              <a href="#" class="btn btn-light btn-lg">Book a Delivery</a>
+        <!-- Slide 2 -->
+        <div class="carousel-item hero-slide hero-slide-2 text-white">
+          <div class="container h-100 d-flex align-items-center">
+            <div class="row w-100 align-items-center">
+              <div class="col-md-6 text-start">
+                <h2 class="display-5">Courier Pick-Up & Drop-Off You Can Trust</h2>
+                <p class="lead">We deliver for florists, pharmacies, retailers, and more — quickly and securely.</p>
+              </div>
+              <div class="col-md-6 text-end">
+                <button class="btn btn-light btn-lg" data-action="pickup" aria-label="Schedule a Pickup">Schedule a Pick-Up</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev" aria-label="Previous Slide">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next" aria-label="Next Slide">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      </button>
+    </div>
+
+    <!-- Services Section -->
+    <section id="services" class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-4">What We Deliver</h2>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-3">
+            <div class="card h-100 shadow-sm text-center">
+              <div class="card-body">
+                <h5 class="card-title">Local Florist Courier</h5>
+                <p class="card-text">We ensure fresh, safe, and timely delivery of floral arrangements for local florists.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="card h-100 shadow-sm text-center">
+              <div class="card-body">
+                <h5 class="card-title">Pharmacy Prescription Delivery</h5>
+                <p class="card-text">Secure and confidential prescription pick-up and drop-off, delivered right to your door.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="card h-100 shadow-sm text-center">
+              <div class="card-body">
+                <h5 class="card-title">Retail & Parcel Delivery</h5>
+                <p class="card-text">Reliable courier service for small retailers, e-commerce businesses, and parcel delivery needs.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="card h-100 shadow-sm text-center">
+              <div class="card-body">
+                <h5 class="card-title">Same-Day Local Delivery</h5>
+                <p class="card-text">Fast and efficient same-day delivery services across your local area.</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
+    </section>
 
-
-      <!-- Slide 2 -->
-      <div class="carousel-item hero-slide hero-slide-2 text-white">
-        <div class="container h-100 d-flex align-items-center">
-          <div class="row w-100 align-items-center">
-            <!-- Left: Text -->
-            <div class="col-md-6 text-start">
-              <h2 class="display-5">Courier Pick-Up & Drop-Off You Can Trust</h2>
-              <p class="lead">We deliver for florists, pharmacies, retailers, and more — quickly and securely.</p>
-            </div>
-
-            <!-- Right: Button -->
-            <div class="col-md-6 text-end">
-              <a href="#" class="btn btn-light btn-lg">Schedule a Pick-Up</a>
-            </div>
-          </div>
-        </div>
+    <!-- Contact CTA -->
+    <section id="contact" class="bg-light py-5 text-center">
+      <div class="container">
+        <h3>Need a custom delivery solution?</h3>
+        <p>Our team is ready to assist you 24/7. Let's get in touch!</p>
+        <a href="contact.html" class="btn btn-primary" aria-label="Contact Us">Contact Us</a>
       </div>
+    </section>
 
-    </div>
-
-    <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    </button>
-  </div>
-
-  <!-- Services Section -->
-  <section class="py-5">
-    <div class="container">
-      <h2 class="text-center mb-4">What We Deliver</h2>
-      <div class="row g-4">
-        <div class="col-md-6 col-lg-3">
-          <div class="card h-100 shadow-sm text-center">
-            <div class="card-body">
-              <h5 class="card-title">Local Florist Courier</h5>
-              <p class="card-text">We ensure fresh, safe, and timely delivery of floral arrangements for local florists.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-3">
-          <div class="card h-100 shadow-sm text-center">
-            <div class="card-body">
-              <h5 class="card-title">Pharmacy Prescription Delivery</h5>
-              <p class="card-text">Secure and confidential prescription pick-up and drop-off, delivered right to your door.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-3">
-          <div class="card h-100 shadow-sm text-center">
-            <div class="card-body">
-              <h5 class="card-title">Retail & Parcel Delivery</h5>
-              <p class="card-text">Reliable courier service for small retailers, e-commerce businesses, and parcel delivery needs.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-3">
-          <div class="card h-100 shadow-sm text-center">
-            <div class="card-body">
-              <h5 class="card-title">Same-Day Local Delivery</h5>
-              <p class="card-text">Fast and efficient same-day delivery services across your local area.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact CTA -->
-  <section class="bg-light py-5 text-center">
-    <div class="container">
-      <h3>Need a custom delivery solution?</h3>
-      <p>Our team is ready to assist you 24/7. Let's get in touch!</p>
-      <a href="#" class="btn btn-primary">Contact Us</a>
-    </div>
-  </section>
+  </main>
 
   <!-- Footer -->
   <footer class="bg-primary text-white text-center">
