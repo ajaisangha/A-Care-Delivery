@@ -1,0 +1,146 @@
+:root {
+  --brand-color: #0b6efd;
+  --bg: #fff;
+  --text: #222;
+  --muted: #666;
+  --nav-height: 60px;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, system-ui, Arial;
+  background: var(--bg);
+  color: var(--text);
+}
+
+/* Header */
+.site-header {
+  background: var(--brand-color);
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 40;
+  padding: 8px 0;
+}
+
+.nav-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+}
+
+.brand {
+  font-weight: 700;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 18px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: background 0.3s;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  padding: 80px 16px 40px;
+  background: linear-gradient(to bottom, #f3f7ff, #ffffff);
+}
+
+.hero h1 {
+  font-size: 2.2rem;
+  color: var(--brand-color);
+}
+
+.hero p {
+  color: var(--muted);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Zones */
+.zones {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 16px;
+}
+
+.zones h2 {
+  color: var(--brand-color);
+  border-bottom: 2px solid #eee;
+  padding-bottom: 8px;
+}
+
+.zones ul {
+  list-style: none;
+  padding: 0;
+}
+
+.zones li {
+  padding: 6px 0;
+}
+
+/* Services */
+.service {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 16px;
+  border-bottom: 1px solid #eee;
+}
+
+.service h2 {
+  color: var(--brand-color);
+}
+
+.service p {
+  color: var(--muted);
+}
+
+.benefits {
+  list-style: none;
+  padding: 0;
+}
+
+.benefits li {
+  margin: 6px 0;
+  position: relative;
+  padding-left: 20px;
+}
+
+.benefits li::before {
+  content: "✓";
+  color: var(--brand-color);
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+/* Footer */
+footer {
+  background: var(--brand-color);
+  color: #fff;
+  text-align: center;
+  padding: 24px 16px;
+  margin-top: 60px;
+  font-size: 1rem;
+}

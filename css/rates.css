@@ -1,0 +1,131 @@
+:root {
+  --brand-dark: #043b9a;
+  --brand-accent: #0b6efd;
+  --bg: #f9fafc;
+  --text: #222;
+  --muted: #555;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+/* Header */
+.site-header {
+  background: var(--brand-dark);
+  color: white;
+  padding: 12px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  max-width: 1100px;
+}
+
+.brand {
+  font-weight: bold;
+  font-size: 1.3rem;
+  color: white;
+  text-decoration: none;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  background: rgba(255,255,255,0.2);
+}
+
+/* Main Section */
+.rates-section {
+  max-width: 1100px;
+  margin: 2rem auto;
+  padding: 0 1rem 3rem;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+.rates-section h1 {
+  text-align: center;
+  color: var(--brand-dark);
+}
+
+.intro {
+  text-align: center;
+  color: var(--muted);
+  margin-bottom: 2rem;
+}
+
+.zones ul {
+  list-style: disc;
+  padding-left: 1.5rem;
+}
+
+.rate-category {
+  margin-top: 3rem;
+}
+
+.rate-category h2 {
+  color: var(--brand-dark);
+  margin-bottom: 0.5rem;
+}
+
+.rate-category table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.rate-category th,
+.rate-category td {
+  border: 1px solid #ddd;
+  padding: 10px 8px;
+  text-align: left;
+}
+
+.rate-category th {
+  background: var(--brand-dark);
+  color: white;
+}
+
+.rate-category tbody tr:nth-child(even) {
+  background: #f3f6fb;
+}
+
+.benefits {
+  margin-top: 0.5rem;
+  font-size: 0.95rem;
+  color: var(--muted);
+}
+
+/* Footer */
+footer {
+  background: var(--brand-dark);
+  color: white;
+  text-align: center;
+  padding: 1.2rem 0;
+  font-size: 0.95rem;
+  margin-top: 3rem;
+}

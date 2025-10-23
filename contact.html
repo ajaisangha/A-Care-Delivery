@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>A+ Care Delivery | Contact</title>
+  <link rel="stylesheet" href="css\contact.css" />
+  <script defer src="js/contact.js"></script>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="nav-container">
+      <a href="index.html" class="brand">A+ Care Delivery</a>
+      <nav class="primary-nav">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="rates.html" class="nav-link">Rates</a></li>
+          <li><a href="contact.html" class="nav-link active">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Contact A+ Care Delivery</h1>
+    <p>Get in touch with our team for inquiries, partnerships, or delivery requests.</p>
+  </section>
+
+  <!-- Contact Information -->
+  <section class="contact-info">
+    <h2>Company Information</h2>
+    <ul>
+      <li><strong>Company Name:</strong> A+ Care Delivery</li>
+      <li><strong>Email:</strong> <span id="company-email"></span></li>
+      <li><strong>Phone:</strong> <span id="company-phone"></span></li>
+      <li><strong>Office Address:</strong> 378 Vogel Place, Waterloo, ON</li>
+    </ul>
+  </section>
+
+  <!-- Contact Form -->
+  <section class="contact-form-section">
+    <h2>Send Us a Message</h2>
+    <form id="contact-form">
+      <div class="form-group">
+        <label for="name">Full Name *</label>
+        <input type="text" id="name" name="name" required placeholder="Your full name" />
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email *</label>
+        <input type="email" id="email" name="email" required placeholder="you@example.com" />
+      </div>
+
+      <div class="form-group">
+        <label for="subject">Subject *</label>
+        <input type="text" id="subject" name="subject" required placeholder="Message subject" />
+      </div>
+
+      <div class="form-group">
+        <label for="message">Message *</label>
+        <textarea id="message" name="message" rows="6" required placeholder="Write your message here..."></textarea>
+      </div>
+
+      <button type="submit" class="submit-btn">Send Message</button>
+    </form>
+    <p id="form-status"></p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 A+ Care Delivery | Reliable Local Logistics</p>
+  </footer>
+
+</body>
+</html>
