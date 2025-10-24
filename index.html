@@ -3,148 +3,58 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>A+ Care Delivery</title>
-
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <title>A+ Care Delivery | Home</title>
   <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/home.css" />
 </head>
 <body>
+  <!-- Header Component -->
+  <div id="header-placeholder"></div>
 
-  <!-- Navbar -->
-  <header class="site-header">
-  <div class="container nav-container">
-    <a href="index.html" class="brand" aria-label="A+ Care Delivery home">A+ Care Delivery</a>
+  <main class="home-container">
+    <section class="hero">
+      <h1>Welcome to A+ Care Delivery</h1>
+      <p>Your trusted partner for fast, reliable, and secure delivery services across Ontario.</p>
+      <a href="services.html" class="cta-btn">Explore Our Services</a>
+    </section>
 
-    <button id="nav-toggle" class="nav-toggle" aria-controls="primary-nav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="hamburger"></span>
-    </button>
+    <section class="about">
+      <h2>About Us</h2>
+      <p>
+        At <strong>A+ Care Delivery</strong>, we pride ourselves on delivering excellence every step of the way. 
+        Whether it’s same-day delivery, scheduled drop-offs, or sensitive cargo handling, 
+        our team ensures your items reach their destination safely and on time.
+      </p>
+      <p>
+        With years of experience in logistics and customer care, 
+        we have built a reputation for being responsive, professional, and dependable.
+        Our mission is simple — to make deliveries stress-free for individuals and businesses alike.
+      </p>
+    </section>
 
-    <nav id="primary-nav" class="primary-nav" role="navigation" aria-label="Primary">
-      <ul class="nav-list">
-        <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-        <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
-        <li class="nav-item"><a href="rates.html" class="nav-link">Rates</a></li>
-        <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
-
-
-  <!-- Main Content -->
-  <main>
-
-    <!-- Hero Carousel -->
-    <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      </div>
-      <div class="carousel-inner">
-
-        <!-- Slide 1 -->
-        <div class="carousel-item active hero-slide hero-slide-1 text-white">
-          <div class="container h-100 d-flex align-items-center">
-            <div class="row w-100 align-items-center">
-              <div class="col-md-6 text-start">
-                <h1 class="display-4">Fast, Reliable & Safe Deliveries</h1>
-                <p class="lead">Your trusted courier partner across the city and beyond.</p>
-              </div>
-              <div class="col-md-6 text-end">
-                <button class="btn btn-light btn-lg" data-action="book" aria-label="Book a Delivery">Book a Delivery</button>
-              </div>
-            </div>
-          </div>
+    <section class="features">
+      <h2>Why Choose A+ Care Delivery?</h2>
+      <div class="feature-grid">
+        <div class="feature">
+          <h3>🚚 Fast & Reliable</h3>
+          <p>Guaranteed on-time deliveries with real-time tracking and proactive communication.</p>
         </div>
-
-        <!-- Slide 2 -->
-        <div class="carousel-item hero-slide hero-slide-2 text-white">
-          <div class="container h-100 d-flex align-items-center">
-            <div class="row w-100 align-items-center">
-              <div class="col-md-6 text-start">
-                <h2 class="display-5">Courier Pick-Up & Drop-Off You Can Trust</h2>
-                <p class="lead">We deliver for florists, pharmacies, retailers, and more — quickly and securely.</p>
-              </div>
-              <div class="col-md-6 text-end">
-                <button class="btn btn-light btn-lg" data-action="pickup" aria-label="Schedule a Pickup">Schedule a Pick-Up</button>
-              </div>
-            </div>
-          </div>
+        <div class="feature">
+          <h3>🤝 Trusted Professionals</h3>
+          <p>Our experienced drivers and logistics experts handle every package with care and responsibility.</p>
         </div>
-
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev" aria-label="Previous Slide">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next" aria-label="Next Slide">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      </button>
-    </div>
-
-    <!-- Services Section -->
-    <section id="services" class="py-5">
-      <div class="container">
-        <h2 class="text-center mb-4">What We Deliver</h2>
-        <div class="row g-4">
-          <div class="col-md-6 col-lg-3">
-            <div class="card h-100 shadow-sm text-center">
-              <div class="card-body">
-                <h5 class="card-title">Local Florist Courier</h5>
-                <p class="card-text">We ensure fresh, safe, and timely delivery of floral arrangements for local florists.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3">
-            <div class="card h-100 shadow-sm text-center">
-              <div class="card-body">
-                <h5 class="card-title">Pharmacy Prescription Delivery</h5>
-                <p class="card-text">Secure and confidential prescription pick-up and drop-off, delivered right to your door.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3">
-            <div class="card h-100 shadow-sm text-center">
-              <div class="card-body">
-                <h5 class="card-title">Retail & Parcel Delivery</h5>
-                <p class="card-text">Reliable courier service for small retailers, e-commerce businesses, and parcel delivery needs.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3">
-            <div class="card h-100 shadow-sm text-center">
-              <div class="card-body">
-                <h5 class="card-title">Same-Day Local Delivery</h5>
-                <p class="card-text">Fast and efficient same-day delivery services across your local area.</p>
-              </div>
-            </div>
-          </div>
+        <div class="feature">
+          <h3>📦 Flexible Services</h3>
+          <p>From small parcels to large shipments, we tailor our services to your specific needs.</p>
         </div>
       </div>
     </section>
-
-    <!-- Contact CTA -->
-    <section id="contact" class="bg-light py-5 text-center">
-      <div class="container">
-        <h3>Need a custom delivery solution?</h3>
-        <p>Our team is ready to assist you 24/7. Let's get in touch!</p>
-        <a href="contact.html" class="btn btn-primary" aria-label="Contact Us">Contact Us</a>
-      </div>
-    </section>
-
   </main>
 
-  <!-- Footer -->
-  <footer class="bg-primary text-white text-center">
-    <div class="container">
-      <p class="mb-0">&copy; 2025 A+ Care Delivery. All rights reserved.</p>
-    </div>
-  </footer>
+  <!-- Footer Component -->
+  <div id="footer-placeholder"></div>
 
-  <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-
-  <!-- Custom JS -->
   <script src="js/script.js"></script>
+  <script src="js/home.js"></script>
 </body>
 </html>
